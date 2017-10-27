@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alros Avellana Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=BenchNine|Comfortaa|Gruppo|Muli|Pathway+Gothic+One|Ropa+Sans|Teko|Yantramanav"
+        rel="stylesheet">
+    <script src="https://use.fontawesome.com/6767360c0f.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+</head>
+
+<body>
+
+    <!--main nav  -->
+    <nav class="navbar">
+        <span class="open-slide">
+            <a id="svg" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+
+        <ul class="navbar-nav">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!--end main nav  -->
+    <!--Slide Out Nav  -->
+    <div id="side-menu" class="side-nav">
+        <a class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div id="site" class="site">
+        <header>
+            <div class="widget center">
+
+                <div class="blur"></div>
+                <div class="text center">
+                    <h1>Alros Avellana</h1>
+                    <p class="words"></p>
+                </div>
+            </div>
+        </header>
+
+        <section id="about">
+            <h1>
+                <span>&#10094;</span> About Me
+                <span>&#10095;</span>
+            </h1>
+            <br>
+            <h4>
+                <b>/ I love coding and designing websites /</b>
+            </h4>
+            <br>
+            <div>
+                <h3>Hi, my name is
+                    <span class="yantra" style="font-size:25px; line-height:2">
+                        <b>Alros Avellana</b>
+                    </span></h3>
+                <br>
+                <p> I'm an aspiring Web-Developer. I discovered my passion for coding around December 2016. It was an instant
+                    obsession. Now I'm hoping to turn it into my career.</p>
+                    <br>
+                    <p> I pride myself in my ability to write plain vanilla HTML, CSS, and JavaScript 
+                        without any plugins or frameworks. 
+                        I believe that new frameworks can be learned but a good foundation is a must. 
+                        For now my focus is Front-end Development. I just love the Design and Creative aspect
+                        of it but I will learn back-end development soon enough!
+                </p>
+                <br>
+                <p>I started my learning through freeCodeCamp
+                    <i class="fa fa-free-code-camp fa-lg" aria-hidden="true"></i> and other online resources where I logged over 400+ hours of coding and learning front-end development
+                    including 150 hours of algorithm challenges, and 6 projects that range from basic to advanced. The varying difficulty and requirements of each project unquestionably 
+                    helped me grasp and understand what I needed to learn. That doesn't mean my learning is over, in-fact its just begun!
+                </p>
+            </div>
+        </section>
+        <section id="projects">
+            <h1>My Projects</h1>
+            <div id="pBelt" class="pBelt">
+                <div class="pWrap">
+                    <div class="pContainer" onclick="timeOutDelay(document.getElementById('projects'))">
+                        <div class="pUnit" style="background-image: url(/pImages/Calculator.png);" data-project="calculator">
+                            <div class="pOverlay">
+                                <strong>Calculator</strong>
+                            </div>
+                        </div>
+
+                        <div class="pUnit" style="background-image: url(/pImages/SimonGame.png);" data-project="simonGame">
+                            <div class="pOverlay">
+                                <strong>Simon Game</strong>
+                            </div>
+                        </div>
+
+                        <div class="pUnit" style="background-image: url(/pImages/quoteGenerator.png);" data-project="quoteGen">
+                            <div class="pOverlay">
+                                <strong>Quote Generator</strong>
+                            </div>
+                        </div>
+
+                        <div class="pUnit" style="background-image: url(/pImages/tic.png);" data-project="ticTacToe">
+                            <div class="pOverlay">
+                                <strong>Tic-Tac-Toe</strong>
+                            </div>
+                        </div>
+
+                        <div class="pUnit" style="background-image: url(/pImages/wiki.png);" data-project="wikiViewer">
+                            <div class="pOverlay">
+                                <strong>Wiki Viewer</strong>
+                            </div>
+                        </div>
+
+                        <div class="pUnit" style="background-image: url(/pImages/twitch.png);" data-project="twitchViewer">
+                            <div class="pOverlay">
+                                <strong>Twitch Viewer</strong>
+                            </div>
+                        </div>
+                        <div class="pUnit" style="background-image: url(/pImages/clock.png);" data-project="pomodoroClock">
+                            <div class="pOverlay">
+                                <strong>Pomodoro Clock</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="workWrap">
+                    <div id="wContainer" class="wContainer">
+                        <h3 class="project-title">
+                            <span id="work-return" class="work-return">
+                                < </span>Boom!!!</h3>
+                        <div id="ticTacToe" class="tabcontent">
+                            <h3>Tic Tac Toe!</h3>
+
+
+                            <p data-height="466" data-theme-id="0" data-slug-hash="oeqbLb" data-default-tab="result" data-user="alrosavellana" data-embed-version="2"
+                                data-pen-title="Tic Tac Toe!" class="codepen">See the Pen
+                                <a href="https://codepen.io/alrosavellana/pen/oeqbLb/">Tic Tac Toe!</a> by Alros Avellana (
+                                <a href="https://codepen.io/alrosavellana">@alrosavellana</a>) on
+                                <a href="https://codepen.io">CodePen</a>.</p>
+                            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                            <p>Here I created a fully functioning Tic Tac Toe Game. Its fully self coded with no assistance
+                                from any API's. The challenge for me here was creating a challenging computer opponent without
+                                it being a set algorithm for every move thus making it dull. The code and logic behind the
+                                computer opponent is something I'm proud of. It tracks your moves as to stop you from winning
+                                while at the same time seizing any opportunity to win. Try it out for yourself!
+                            </p>
+                        </div>
+                        <div id="quoteGen" class="tabcontent">
+                            <h3>Quote Generator</h3>
+                            <p data-height="466" data-theme-id="0" data-slug-hash="OWGJEo" data-default-tab="result" data-user="alrosavellana" data-embed-version="2"
+                                data-pen-title="AL's  quote generator" class="codepen">See the Pen
+                                <a href="https://codepen.io/alrosavellana/pen/OWGJEo/">AL's quote generator</a> by Alros Avellana (
+                                <a href="https://codepen.io/alrosavellana">@alrosavellana</a>) on
+                                <a href="https://codepen.io">CodePen</a>.</p>
+                            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                            <p>This was the first time I interacted with an API. The challenge for me here was really getting
+                                the grasp of requesting the data, storing that data, converting it to elements and having
+                                that put out as the page! Really proud when it worked</p>
+                        </div>
+                        <div id="pomodoroClock" class="tabcontent">
+                            <h3>Pomodoro Clock</h3>
+                            <p data-height="466" data-theme-id="0" data-slug-hash="NgYdoP" data-default-tab="result" data-user="alrosavellana" data-embed-version="2"
+                                data-pen-title="Al's Pomodoro Clock" class="codepen">See the Pen
+                                <a href="https://codepen.io/alrosavellana/pen/NgYdoP/">Al's Pomodoro Clock</a> by Alros Avellana (
+                                <a href="https://codepen.io/alrosavellana">@alrosavellana</a>) on
+                                <a href="https://codepen.io">CodePen</a>.</p>
+                            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                            <p>This is a Pomodoro Clock based on the Pomodoro Technique time management method developed by
+                                Francesco Cirillo in the late 1980's!
+
+                            </p>
+                        </div>
+                        <div id="twitchViewer" class="tabcontent">
+                            <h3>Twitch Viewer</h3>
+                            <p data-height="466" data-theme-id="0" data-slug-hash="gmGKpV" data-default-tab="result" data-user="alrosavellana" data-embed-version="2"
+                                data-pen-title="Twitch Viewer App" class="codepen">See the Pen
+                                <a href="https://codepen.io/alrosavellana/pen/gmGKpV/">Twitch Viewer App</a> by Alros Avellana (
+                                <a href="https://codepen.io/alrosavellana">@alrosavellana</a>) on
+                                <a href="https://codepen.io">CodePen</a>.</p>
+                            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                            <p>This is a Live Twitch Viewer using the Twitch API! The challenge for me here was definitely learning
+                                how to take all that information that comes back from the request and creating multiple elements
+                                showing multiple different parts of the data and adding that onto the DOM and filtering through
+                                that data and representing that on the DOM. The Viewer includes various twitch streamers,
+                                their names, their pictures if they have one, their online status and more!
+                            </p>
+                        </div>
+                        <div id="wikiViewer" class="tabcontent">
+                            <h3>Wikipedia Viewer</h3>
+                            <p data-height="400" data-theme-id="0" data-slug-hash="ryWrWp" data-default-tab="result" data-user="alrosavellana" data-embed-version="2"
+                                data-pen-title="Wikipedia Viewer App" data-preview="true" class="codepen">See the Pen
+                                <a href="https://codepen.io/alrosavellana/pen/ryWrWp/">Wikipedia Viewer App</a> by Alros Avellana (
+                                <a href="https://codepen.io/alrosavellana">@alrosavellana</a>) on
+                                <a href="https://codepen.io">CodePen</a>.</p>
+                            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                            <p>
+                                This is a wikipedia viewer that uses the wiki API. It allows you to search a topic and have it and all the related things
+                                appear on the page and links to those things also. The challenge for me here was communicating
+                                with the server. There were securty issues with this the API that codepen did not allow.
+                                Alot of googling, stack-overflowing, and research was done to make this work! check it out!
+                            </p>
+                        </div>
+                        <div id="simonGame" class="tabcontent">
+                            <h3>Simon Game</h3>
+                            <p data-height="466" data-theme-id="0" data-slug-hash="WOgbxP" data-default-tab="result" data-user="alrosavellana" data-embed-version="2"
+                                data-pen-title="Simon Game" class="codepen">See the Pen
+                                <a href="https://codepen.io/alrosavellana/pen/WOgbxP/">Simon Game</a> by Alros Avellana (
+                                <a href="https://codepen.io/alrosavellana">@alrosavellana</a>) on
+                                <a href="https://codepen.io">CodePen</a>.</p>
+                            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                            <p>
+                                Here I created a Simon Game! The challenge for me during this project was definitely combining User Interaction, CSS, and
+                                JavaScript simultaneously to create a fully functioning Simon Game with sound!
+                            </p>
+                        </div>
+                        <div id="calculator" class="tabcontent">
+                            <h3>Calculator</h3>
+                            <p data-height="466" data-theme-id="0" data-slug-hash="jwwwvQ" data-default-tab="result" data-user="alrosavellana" data-embed-version="2"
+                                data-pen-title="JavaScript Calculator App" data-preview="true" class="codepen">See the Pen
+                                <a href="https://codepen.io/alrosavellana/pen/jwwwvQ/">JavaScript Calculator App</a> by Alros Avellana (
+                                <a href="https://codepen.io/alrosavellana">@alrosavellana</a>) on
+                                <a href="https://codepen.io">CodePen</a>.</p>
+                            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                            <p>
+                                Here I created a fully functioning calculator with jQuery and Bootstrap without any API being used. The challenge for me
+                                here was not so much the calculating part but rather placing limitations on what the user
+                                can do and see such as not being able to press any operator and have it show up on the screen
+                                multipe times or before any number is pressed. Its the multiple minute things like that which
+                                I could only see through user testing that makes it feel like a real working calculator.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+           
+            <h1 class="title underline">Contact Me</h1>
+            
+            <form action="https://formspree.io/alros.avellana@yahoo.com" method="POST">
+                <div class="info-group">
+                    <label><span class="underline"> Your Name</span><input type="text" name="name"></label>
+
+                    <label><span class="underline">Your Email</span><input type="email" name="_replyto"></label>
+                </div>
+
+                <label><span class="underline">Tell me about your Project!</span><textarea name="message" id="" cols="30" rows="10"></textarea></label>
+
+                <input id="send" type="submit" value="Send">
+            </form>
+        </section>
+
+        <footer>
+            <ul>
+                <li>
+                    <a href="https://github.com/alrosavellana" target="_blank">
+                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/alros-avellana-85ba79132/" target="_blank">
+                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/alros.avellana" target="_blank">
+                        <i class="fa fa-facebook-official fa-2x" aria-hidden="true" ></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.freecodecamp.org/alrosavellana" target="_blank">
+                        <i class="fa fa-free-code-camp fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <p id="copyright">Copyright<span>&#169;</span> 2017 Alros Avellana. All rights reserved.</p>
+        </footer>
+
+    </div>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
