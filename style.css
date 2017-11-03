@@ -314,7 +314,7 @@ hr{
   background-color:black;
 }
 #projects .pUnit{
-  
+  cursor: pointer;
   position: relative;
   height:175px; 
   display: block;
